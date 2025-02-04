@@ -1,0 +1,43 @@
+{
+  "name": "membershipworks-events-to-posts",
+  "version": "1.0.0",
+  "author": "Frankie Rodriguez <frankie@symphonytechsolutions.com>",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "description": "WordPress plugin that automatically creates and updates posts from MembershipWorks events, providing seamless event management and display on your website",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "check-engines": "wp-scripts check-engines",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "predist": "npm run build",
+    "dist": "rm -rf dist && mkdir -p dist/membershipworks-events-to-posts && cp -r build includes wp-react-plugin.php README.txt dist/membershipworks-events-to-posts/",
+    "postdist": "cd dist && zip -r membershipworks-events-to-posts.zip membershipworks-events-to-posts/",
+    "package": "npm run predist && npm run dist && npm run postdist"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@wordpress/scripts": "^27.0.0",
+    "@wordpress/components": "^25.0.0",
+    "@wordpress/element": "^5.0.0",
+    "@wordpress/i18n": "^4.0.0",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/tests/jest.setup.js"
+    ],
+    "testEnvironment": "jsdom",
+    "moduleNameMapper": {
+      "\\.(css|less|scss|sass)$": "<rootDir>/tests/__mocks__/styleMock.js"
+    },
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/build/"
+    ]
+  }
+}

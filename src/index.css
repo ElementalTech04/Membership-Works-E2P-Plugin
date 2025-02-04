@@ -1,0 +1,124 @@
+.wp-react-plugin {
+    margin: 20px;
+}
+
+#wp-react-plugin-root {
+    margin: 20px;
+}
+
+.mwep-admin {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.mwep-admin .components-card {
+    max-width: 800px;
+}
+
+.mwep-admin .components-card__header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.mwep-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.mwep-header h1 {
+    font-size: 2.5em;
+    color: #1e1e1e;
+    margin: 0 0 15px 0;
+}
+
+.mwep-description {
+    font-size: 1.1em;
+    color: #757575;
+    margin: 0;
+}
+
+.mwep-content {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.mwep-connection-help {
+    background: #f0f6fc;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.mwep-connection-help p {
+    margin-top: 0;
+}
+
+.mwep-connection-help ol {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.mwep-connection-help li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.mwep-connection-help a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2271b1;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.mwep-connection-help a:hover {
+    color: #135e96;
+    text-decoration: underline;
+}
+
+.components-panel__row {
+    display: block !important;
+    margin: 0 0 20px 0 !important;
+}
+
+.components-base-control {
+    width: 100% !important;
+}
+
+.components-text-control__input,
+.components-select-control__input {
+    max-width: 100% !important;
+}
+
+.components-panel__body-title {
+    background: #f0f6fc !important;
+}
+
+.mwep-actions {
+    background: #f6f7f7;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.components-button.is-primary {
+    background: #2271b1 !important;
+}
+
+.components-button.is-secondary {
+    border-color: #2271b1 !important;
+    color: #2271b1 !important;
+}
+
+.components-notice {
+    margin: 0 0 20px 0 !important;
+}
+
+.mwep-admin .components-base-control {
+    margin-bottom: 24px;
+}

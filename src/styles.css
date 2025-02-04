@@ -1,0 +1,39 @@
+.mwep-events-url-field {
+    margin-bottom: 24px;
+}
+
+.mwep-url-preview {
+    margin-top: 8px;
+    padding: 12px;
+    background: #f0f0f1;
+    border-radius: 4px;
+}
+
+.mwep-url-validation {
+    margin: 0 0 8px 0;
+    font-size: 13px;
+}
+
+.mwep-url-validation .valid {
+    color: #00a32a;
+}
+
+.mwep-url-validation .invalid {
+    color: #d63638;
+}
+
+.mwep-preview-label {
+    margin: 0 0 4px 0;
+    font-size: 12px;
+    color: #757575;
+}
+
+.mwep-preview-url {
+    display: block;
+    padding: 8px;
+    background: #fff;
+    border-radius: 2px;
+    font-size: 12px;
+    word-break: break-all;
+    color: #3c434a;
+}

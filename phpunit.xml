@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="tests/bootstrap.php"
+         colors="true"
+         verbose="true"
+         stopOnFailure="false">
+    <testsuites>
+        <testsuite name="MembershipWorks Events to Posts Test Suite">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">includes</directory>
+        </whitelist>
+    </filter>
+    <php>
+        <env name="WP_TESTS_DIR" value="./tests/wordpress-tests-lib"/>
+        <env name="WP_CORE_DIR" value="./tests/wordpress"/>
+    </php>
+</phpunit>
